@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Support Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Community Support Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#donate">Donate fdsfdkfmlmItems</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#volunteer">Volunkjfndkfndkjfnteer</a></li>
+                <li><a href="#financial">Financdfskjfdnnfial Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="donate">
+        <h2>Donate Items</h2>
+        <p>Give away your unused items to someone in need.</p>
+        <button onclick="showPopup('donate-popup')">Donate Now</button>
+    </section>
+
+    <section id="shop">
+        <h2>Shop for a Cause</h2>
+        <p>Buy donated items and support the community.</p>
+        <button onclick="showPopup('shop-popup')">Browse Items</button>
+    </section>
+
+    <section id="volunteer">
+        <h2>Volunteer</h2>
+        <p>Join hands to make a difference in the community.</p>
+        <button onclick="showPopup('volunteer-popup')">Sign Up</button>
+    </section>
+
+    <section id="financial">
+        <h2>Financial Support</h2>
+        <p>Donate money to support community initiatives.</p>
+        <button onclick="showPopup('financial-popup')">Donate Now</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Community Support Hub. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Popups -->
+    <div class="popup" id="donate-popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('donate-popup')">&times;</span>
+            <h3>Donate an Item</h3>
+            <input type="text" placeholder="Item Name">
+            <input type="file">
+            <button>Submit</button>
+        </div>
+    </div>
+
+    <div class="popup" id="shop-popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('shop-popup')">&times;</span>
+            <h3>Shop Items</h3>
+            <p>List of items will appear here.</p>
+        </div>
+    </div>
+
+    <div class="popup" id="volunteer-popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('volunteer-popup')">&times;</span>
+            <h3>Volunteer Signup</h3>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <button>Sign Up</button>
+        </div>
+    </div>
+
+    <div class="popup" id="financial-popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('financial-popup')">&times;</span>
+            <h3>Donate Money</h3>
+            <input type="number" placeholder="Amount">
+            <button>Donate</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

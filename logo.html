@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShareSphere Logo</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #f7f9fc, #e3f2fd);
+        }
+        .logo-container {
+            width: 320px;
+            height: 320px;
+            text-align: center;
+        }
+        .text {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            fill: #3E8FA4;
+        }
+        .highlight {
+            fill: #A12E7D;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+            <!-- Left Figure -->
+            <circle cx="90" cy="70" r="15" fill="#3E8FA4"/>
+            <path d="M90 85 Q60 130, 100 180 Q140 220, 150 200 Q120 180, 110 160 Q80 120, 90 85" fill="#3E8FA4"/>
+
+            <!-- Right Figure -->
+            <circle cx="210" cy="70" r="15" fill="#A12E7D"/>
+            <path d="M210 85 Q240 130, 200 180 Q160 220, 150 200 Q180 180, 190 160 Q220 120, 210 85" fill="#A12E7D"/>
+
+            <!-- Heart Shape -->
+            <path d="M150,130 C140,100,100,110,100,140 C100,180,150,210,150,210 C150,210,200,180,200,140 C200,110,160,100,150,130" 
+                  fill="white" stroke="pink" stroke-width="4"/>
+
+            <!-- Text Below -->
+            <text x="5" y="260" class="text">Share a little,change a lot<tspan class="highlight"></tspan></text>
+        </svg>
+    </div>
+</body>
+</html>
